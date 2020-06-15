@@ -7,10 +7,10 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 
-from .timnet import main
+from .alarminventory import main
 
 __name__ = "alarminventory"
 __version__ = '0.0.1'
 __author__ = 'Jerzy Jamroz'
 __license__ = "GPL v2"
-__summary__ = "MRF hardware based network utilities"
+__summary__ = "Alarm inventory for EPICS alarm system"

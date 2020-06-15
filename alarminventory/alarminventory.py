@@ -22,23 +22,18 @@ def main():
         print(open('README.md').read())
 
     # Interface
-    interface = {"inventory": cli_params.inventory,
-                 "network": cli_params.inventory.replace(".", "_net."),
-                 "plot": cli_params.inventory.replace(".", "_plot."),
-                 "limits": "inventory/limits.json",
-                 "pvs": cli_params.pvs,
-                 "errors": cli_params.inventory.replace(".", "_err.")
+    interface = {"input": cli_params.input,
+                 "output": cli_params.output,
+                 #"plot": cli_params.inventory.replace(".", "_plot."),
                  }
 
-    if cli_params.dev:
-        for el in interface:
-            interface[el] = interface[el].replace(".", "_dev.")
 
     # declare meta list to log the program progress
     logging.info("cli_params " + str(cli_params))
     logging.info("interface " + str(interface))
     #if cli_params.net:
     #    tnet.main(inventory_jl=interface["inventory"], network_jl=interface["network"], pvs_jl=interface["pvs"])
+    yaml2xml.main(in_yl=interface["input"], out_xl=interface["output"])
 
 
 if __name__ == '__main__':
