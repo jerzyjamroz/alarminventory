@@ -1,0 +1,17 @@
+component:
+ pv:
+  -
+   description: "SEC1 ALARM"
+   latching: false
+   guidance:
+    title: "[Code]"
+    details: SCEPRDALM
+   _name: "CLOCK:SEC1"
+  -
+   description: "SEC10 ALARM"
+   latching: false
+   guidance:
+    title: "[Code]"
+    details: PLLALM
+   _name: "CLOCK:SEC10"
+ _name: "TD-M"

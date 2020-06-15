@@ -1,0 +1,14 @@
+<config name="TD">
+    <component name="NCL">
+        <component name="TD-M">
+			<pv name="CLOCK:SEC1">
+				<description>SEC1 ALARM</description><latching>false</latching>
+				<guidance><title>[Code]</title><details>SEC1ALARM</details></guidance>
+			</pv>
+			<pv name="CLOCK:SEC10">
+				<description>SEC10 ALARM</description><latching>false</latching>
+				<guidance><title>[Code]</title><details>SEC10ALARM</details></guidance>
+			</pv>
+		</component>
+    </component>
+</config>
