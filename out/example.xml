@@ -1,1 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" ?><root><config type="dict"><key name="@name" type="str">TD</key><component type="dict"><key name="@name" type="str">NCL</key><component type="dict"><key name="@name" type="str">TD-M</key><pv type="list"><item type="dict"><key name="@name" type="str">CLOCK:SEC1</key><description type="str">SEC1 ALARM</description><latching type="str">false</latching><guidance type="dict"><title type="str">[Code]</title><details type="str">SEC1ALARM</details></guidance></item><item type="dict"><key name="@name" type="str">CLOCK:SEC10</key><description type="str">SEC10 ALARM</description><latching type="str">false</latching><guidance type="dict"><title type="str">[Code]</title><details type="str">SEC10ALARM</details></guidance></item></pv></component></component></config></root>
+<?xml version="1.0" encoding="utf-8"?>
+<component name="TD-M">
+	<pv name="CLOCK:SEC1">
+		<description>SEC1 ALARM</description>
+		<latching>false</latching>
+		<guidance>
+			<title>[Code]</title>
+			<details>SEC1</details>
+		</guidance>
+	</pv>
+</component>
