@@ -1,0 +1,50 @@
+!!python/object/apply:collections.OrderedDict
+- - - config
+    - !!python/object/apply:collections.OrderedDict
+      - - - '@name'
+          - MAIN
+        - - component
+          - !!python/object/apply:collections.OrderedDict
+            - - - '@name'
+                - NCL
+              - - component
+                - !!python/object/apply:collections.OrderedDict
+                  - - - '@name'
+                      - TD-M
+                    - - pv
+                      - - !!python/object/apply:collections.OrderedDict
+                          - - - '@name'
+                              - CLOCK:SEC1
+                            - - description
+                              - SEC1 ALARM
+                            - - latching
+                              - 'false'
+                            - - guidance
+                              - - !!python/object/apply:collections.OrderedDict
+                                  - - - title
+                                      - '[Code]'
+                                    - - details
+                                      - SCEPRDALM
+                                - !!python/object/apply:collections.OrderedDict
+                                  - - - title
+                                      - '[Operator verification]'
+                                    - - details
+                                      - https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators
+                        - !!python/object/apply:collections.OrderedDict
+                          - - - '@name'
+                              - CLOCK:SEC10
+                            - - description
+                              - SEC10 ALARM
+                            - - latching
+                              - 'false'
+                            - - guidance
+                              - - !!python/object/apply:collections.OrderedDict
+                                  - - - title
+                                      - '[Code]'
+                                    - - details
+                                      - PLLALM
+                                - !!python/object/apply:collections.OrderedDict
+                                  - - - title
+                                      - '[Operator verification]'
+                                    - - details
+                                      - https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators

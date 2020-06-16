@@ -1,0 +1,27 @@
+config:
+  '@name': MAIN
+  component:
+    '@name': NCL
+    component:
+      '@name': TD-M
+      pv:
+        - '@name': 'CLOCK:SEC1'
+          description: SEC1 ALARM
+          latching: 'false'
+          guidance:
+            - title: '[Code]'
+              details: SEC1
+            - title: '[Operator verification]'
+              details: >-
+                https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators
+
+        - '@name': 'CLOCK:SEC10'
+          description: SEC10 ALARM
+          latching: 'false'
+          guidance:
+            - title: '[Code]'
+              details: SEC10
+            - title: '[Operator verification]'
+              details: >-
+                https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators
+
