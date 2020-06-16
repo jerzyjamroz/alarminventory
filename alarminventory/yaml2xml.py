@@ -8,13 +8,17 @@ import oyaml
 import xmltodict
 
 
-def main(in_yl, out_xl):
+def main(in_yl, out_xl, ids_yl):
     logging.info(__file__)
 
     with open(in_yl) as infile:
         _inv_yaml = oyaml.load(infile, Loader=oyaml.FullLoader)
 
+    with open(ids_yl) as infile:
+        _ids_yaml = oyaml.load(infile, Loader=oyaml.FullLoader)
+
     print(_inv_yaml)
+    print(_ids_yaml)
 
     #with open(out_xl, 'w') as outfile:
     #    outfile.write(xmltodict.unparse(_yaml, encoding='utf-8', pretty=True))

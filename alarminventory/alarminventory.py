@@ -24,6 +24,7 @@ def main():
     # Interface
     interface = {"input": cli_params.input,
                  "output": cli_params.output,
+                 "ids": cli_params.ids,
                  #"plot": cli_params.inventory.replace(".", "_plot."),
                  }
 
@@ -33,7 +34,7 @@ def main():
     logging.info("interface " + str(interface))
     #if cli_params.net:
     #    tnet.main(inventory_jl=interface["inventory"], network_jl=interface["network"], pvs_jl=interface["pvs"])
-    yaml2xml.main(in_yl=interface["input"], out_xl=interface["output"])
+    yaml2xml.main(in_yl=interface["input"], out_xl=interface["output"], ids_yl=interface["ids"])
 
 
 if __name__ == '__main__':
