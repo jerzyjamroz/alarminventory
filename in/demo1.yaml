@@ -1,0 +1,9 @@
+component:
+  '@name': "TD-M"
+  pv:
+    - '@name': "CLOCK:SEC1"
+      description: "SEC1 ALARM"
+      latching: false
+      guidance:
+        title: "[Code]"
+        details: SEC1
