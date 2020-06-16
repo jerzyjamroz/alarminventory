@@ -12,12 +12,14 @@ def main(in_yl, out_xl):
     logging.info(__file__)
 
     with open(in_yl) as infile:
-        _yaml = oyaml.load(infile, Loader=oyaml.FullLoader)
+        _inv_yaml = oyaml.load(infile, Loader=oyaml.FullLoader)
 
-    with open(out_xl, 'w') as outfile:
-        outfile.write(xmltodict.unparse(_yaml, encoding='utf-8', pretty=True))
+    print(_inv_yaml)
 
-    logging.info(_yaml)
+    #with open(out_xl, 'w') as outfile:
+    #    outfile.write(xmltodict.unparse(_yaml, encoding='utf-8', pretty=True))
+
+    #logging.info(_yaml)
 
 
 def demo1_xml2xml():
