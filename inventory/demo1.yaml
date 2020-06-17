@@ -1,5 +1,5 @@
 component:
-  '@name': "TD-M"
+  '@name': "CLOCK"
   pv:
     - '@name': "CLOCK:SEC1"
       description: "SEC1 ALARM"
