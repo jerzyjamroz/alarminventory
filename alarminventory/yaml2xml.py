@@ -41,6 +41,15 @@ def _add_pvd(prefix=""):
     return _list
 
 
+def _add_inv(out_list):
+    _tmp_list = []
+    for asi in _inv_yaml:
+        for dsi in _inv_yaml[asi]:
+            _tmp_list = _add_pvd(pfx_put_sep(asi)+dsi)
+            force_append_list(out_list, _tmp_list)
+            _tmp_list.clear()
+
+
 def main(in_yl, out_xl):
     logging.info(__file__)
     global _inv_dir, _ls
@@ -54,20 +63,10 @@ def main(in_yl, out_xl):
     _pvd_yaml = _load_inv("_pvd.")
     _dev_yaml = _load_inv("_dev.")
 
-    _tmp_list = []
     _out_list = []
-    for asi in _inv_yaml:
-        for dsi in _inv_yaml[asi]:
-            _tmp_list = _add_pvd(pfx_put_sep(asi)+dsi)
-            print(_tmp_list) #********************************
-            #print(pfx_put_sep(asi)+dsi)
-            #print(_tmp_list)
-            #_out_list_copy = merge_dicts2list(_out_list, _tmp_list)
-            #_out_list = _out_list_copy
-            #print(_out_list)
-            _tmp_list.clear()
+    _add_inv(_out_list)
 
-    #print(_out_list)
+    print(_out_list)
 
     # _l2_dict = {"pv": []}
     # for dicti in _out_list:

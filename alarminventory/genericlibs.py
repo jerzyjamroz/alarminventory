@@ -30,8 +30,9 @@ def pfx_put_nosep(prefix=""):
     return prefix[:-1]
 
 
-def merge_dicts2list(lst1, lst2):
-    return {x['@name']: x for x in lst1 + lst2}.values()
+def force_append_list(outl, inl):
+    for dicti in inl:
+        outl.append(dicti.copy())
 
 
 def time2iso():
