@@ -18,6 +18,18 @@ def assure_py3():
         raise Exception("ERROR Python 3 required")
 
 
+def pfx_put_sep(prefix=""):
+    if prefix[-1].isalpha() or prefix[-1].isdigit():
+        prefix += ':'
+    return prefix
+
+
+def pfx_put_nosep(prefix=""):
+    if prefix[-1].isalpha() or prefix[-1].isdigit():
+        return prefix
+    return prefix[:-1]
+
+
 def time2iso():
     return datetime.datetime.now().replace(microsecond=0).isoformat().replace('-', '').replace(':', '')
 

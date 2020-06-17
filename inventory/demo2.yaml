@@ -11,3 +11,9 @@ config:
           guidance:
             title: "[Code]"
             details: SEC1
+        - '@name': "CLOCK:SEC10"
+          description: "SEC1 ALARM"
+          latching: false
+          guidance:
+            title: "[Code]"
+            details: SEC10

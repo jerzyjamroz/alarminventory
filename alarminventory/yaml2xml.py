@@ -7,6 +7,7 @@ import oyaml
 # import yamlordereddictloader
 # import dicttoxml
 import xmltodict
+from genericlibs import *
 
 
 def _load_inv(suffix="_pvd."):
@@ -19,9 +20,29 @@ def _load_inv(suffix="_pvd."):
     return _yaml
 
 
+def _check_dev(prefix, pvarg):
+    _yaml = _dev_yaml
+    for devi in _yaml:
+        if devi in prefix:
+            if pvarg in _yaml[devi]:
+                return True
+    return False
+
+
+def _add_pvd(prefix=""):
+    _list = []
+    _yaml = _pvd_yaml
+    for pvdi in _yaml:
+        if _check_dev(prefix, pvdi):
+            _yaml[pvdi].update({"@name": pfx_put_sep(prefix) + pvdi})
+            _list.append(_yaml[pvdi])
+    return _list
+
+
 def main(in_yl, out_xl):
     logging.info(__file__)
     global _inv_dir, _ls
+    global _inv_yaml, _pvd_yaml, _dev_yaml, _out_list
     _inv_dir = os.path.dirname(in_yl)
     _ls = os.listdir(_inv_dir)
 
@@ -31,8 +52,15 @@ def main(in_yl, out_xl):
     _pvd_yaml = _load_inv("_pvd.")
     _dev_yaml = _load_inv("_dev.")
 
+    print(_inv_yaml)
+    print(_dev_yaml)
     print(_pvd_yaml)
 
+    _out_list = {}
+    for invi in _inv_yaml:
+        _out_list = _add_pvd(invi)
+
+    print(_out_list)
     #with open(out_xl, 'w') as outfile:
     #    outfile.write(xmltodict.unparse(_yaml, encoding='utf-8', pretty=True))
 
