@@ -1,0 +1,12 @@
+SEC1:
+  description: "SEC1 ALARM"
+  latching: false
+  guidance:
+    title: "[Code]"
+    details: SEC1
+SEC10:
+  description: "SEC10 ALARM"
+  latching: false
+  guidance:
+    title: "[Code]"
+    details: SEC10

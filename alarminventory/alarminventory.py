@@ -22,9 +22,8 @@ def main():
         print(open('README.md').read())
 
     # Interface
-    interface = {"input": cli_params.input,
+    interface = {"inventory": cli_params.inventory,
                  "output": cli_params.output,
-                 "ids": cli_params.ids,
                  #"plot": cli_params.inventory.replace(".", "_plot."),
                  }
 
@@ -34,7 +33,7 @@ def main():
     logging.info("interface " + str(interface))
     #if cli_params.net:
     #    tnet.main(inventory_jl=interface["inventory"], network_jl=interface["network"], pvs_jl=interface["pvs"])
-    yaml2xml.main(in_yl=interface["input"], out_xl=interface["output"], ids_yl=interface["ids"])
+    yaml2xml.main(in_yl=interface["inventory"], out_xl=interface["output"])
 
 
 if __name__ == '__main__':

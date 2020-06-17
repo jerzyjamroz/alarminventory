@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import os
 import logging
 import oyaml
 # import yamlordereddictloader
@@ -8,17 +9,29 @@ import oyaml
 import xmltodict
 
 
-def main(in_yl, out_xl, ids_yl):
+def _load_inv(suffix="_pvd."):
+    _yaml = {}
+    for fi in _ls:
+        if suffix in fi:
+            with open(_inv_dir + '/' + fi) as infile:
+                ids_tmp = oyaml.load(infile, Loader=oyaml.FullLoader)
+                _yaml = {**_yaml, **ids_tmp}
+    return _yaml
+
+
+def main(in_yl, out_xl):
     logging.info(__file__)
+    global _inv_dir, _ls
+    _inv_dir = os.path.dirname(in_yl)
+    _ls = os.listdir(_inv_dir)
 
     with open(in_yl) as infile:
         _inv_yaml = oyaml.load(infile, Loader=oyaml.FullLoader)
 
-    with open(ids_yl) as infile:
-        _ids_yaml = oyaml.load(infile, Loader=oyaml.FullLoader)
+    _pvd_yaml = _load_inv("_pvd.")
+    _dev_yaml = _load_inv("_dev.")
 
-    print(_inv_yaml)
-    print(_ids_yaml)
+    print(_pvd_yaml)
 
     #with open(out_xl, 'w') as outfile:
     #    outfile.write(xmltodict.unparse(_yaml, encoding='utf-8', pretty=True))
