@@ -10,3 +10,9 @@ SEC10:
   guidance:
     title: "[Code]"
     details: SEC10
+EvtClk-Pll-Sts:
+  description: "EvtClk-Pll-Sts ALARM"
+  latching: false
+  guidance:
+    title: "[Code]"
+    details: EvtClk-Pll-Sts

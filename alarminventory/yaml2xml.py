@@ -52,15 +52,15 @@ def main(in_yl, out_xl):
     _pvd_yaml = _load_inv("_pvd.")
     _dev_yaml = _load_inv("_dev.")
 
-    print(_inv_yaml)
-    print(_dev_yaml)
-    print(_pvd_yaml)
-
     _out_list = {}
     for invi in _inv_yaml:
-        _out_list = _add_pvd(invi)
+        for prxi in _inv_yaml[invi]:
+            _out_list = _add_pvd(prxi)
 
     print(_out_list)
+
+    #for dicti in _out_list:
+    #    print(dicti)
     #with open(out_xl, 'w') as outfile:
     #    outfile.write(xmltodict.unparse(_yaml, encoding='utf-8', pretty=True))
 

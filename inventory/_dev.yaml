@@ -1,4 +1,6 @@
 CLOCK:
   - "SEC1"
   - "SEC10"
+EVM:
+  - "EvtClk-Pll-Sts"
 
