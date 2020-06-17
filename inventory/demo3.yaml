@@ -1,0 +1,19 @@
+config:
+  '@name': MAIN
+  component:
+    '@name': NCL
+    component:
+      '@name': "TD-L3U1"
+      pv:
+        - '@name': "TD-L3U1:EvtClk-Pll-Sts"
+          description: "EvtClk-Pll-Sts ALARM"
+          latching: false
+          guidance:
+            title: "[Code]"
+            details: EvtClk-Pll-Sts
+        - '@name': "TD-L3U1::Enable-Sel"
+          description: "Enable-Sel ALARM"
+          latching: false
+          guidance:
+            title: "[Code]"
+            details: Enable-Sel

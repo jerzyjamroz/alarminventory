@@ -3,4 +3,5 @@ CLOCK:
   - "SEC10"
 EVM:
   - "EvtClk-Pll-Sts"
+  - "Enable-Sel"
 

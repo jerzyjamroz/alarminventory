@@ -16,3 +16,9 @@ EvtClk-Pll-Sts:
   guidance:
     title: "[Code]"
     details: EvtClk-Pll-Sts
+Enable-Sel:
+  description: "Enable-Sel ALARM"
+  latching: false
+  guidance:
+    title: "[Code]"
+    details: Enable-Sel

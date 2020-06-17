@@ -36,6 +36,8 @@ def _add_pvd(prefix=""):
         if _check_dev(prefix, pvdi):
             _yaml[pvdi].update({"@name": pfx_put_sep(prefix) + pvdi})
             _list.append(_yaml[pvdi])
+
+    # print(_list)
     return _list
 
 
@@ -52,15 +54,32 @@ def main(in_yl, out_xl):
     _pvd_yaml = _load_inv("_pvd.")
     _dev_yaml = _load_inv("_dev.")
 
-    _out_list = {}
-    for invi in _inv_yaml:
-        for prxi in _inv_yaml[invi]:
-            _out_list = _add_pvd(prxi)
+    _tmp_list = []
+    _out_list = []
+    for asi in _inv_yaml:
+        for dsi in _inv_yaml[asi]:
+            _tmp_list = _add_pvd(pfx_put_sep(asi)+dsi)
+            print(_tmp_list) #********************************
+            #print(pfx_put_sep(asi)+dsi)
+            #print(_tmp_list)
+            #_out_list_copy = merge_dicts2list(_out_list, _tmp_list)
+            #_out_list = _out_list_copy
+            #print(_out_list)
+            _tmp_list.clear()
 
-    print(_out_list)
+    #print(_out_list)
 
-    #for dicti in _out_list:
-    #    print(dicti)
+    # _l2_dict = {"pv": []}
+    # for dicti in _out_list:
+    #     _l2_dict["pv"].append(dicti)
+    #
+    # # Add the prefix name to the structure
+    # for pfxi in _inv_yaml:
+    #     if pfxi in _l2_dict["pv"][0]['@name']:
+    #         _l2_dict.update({"@name": pfxi})
+
+    # print(_l2_dict)
+
     #with open(out_xl, 'w') as outfile:
     #    outfile.write(xmltodict.unparse(_yaml, encoding='utf-8', pretty=True))
 
