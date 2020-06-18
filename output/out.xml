@@ -3,411 +3,811 @@
 	<component name="NCL">
 		<component name="TD-M">
 			<pv name="TD-M:Ctrl-EVG-1:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-M:Ctrl-EVG-1:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-M:Ctrl-EVM-1:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-M:Ctrl-EVM-1:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-M:Ctrl-EVM-2:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-M:Ctrl-EVM-2:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-M:Ctrl-EVM-3:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-M:Ctrl-EVM-3:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-M:Ctrl-EVM-4:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-M:Ctrl-EVM-4:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
 				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
+				</guidance>
 			</pv>
 			<pv name="TD-M:Ctrl-EVM-5:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
 				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
+				</guidance>
 			</pv>
 			<pv name="TD-M:Ctrl-EVM-5:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 		</component>
 		<component name="TD-D11">
 			<pv name="TD-D11:Ctrl-EVM-1:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-1:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-2:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-2:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-3:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-3:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-4:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-4:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-5:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-5:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-6:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-6:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-7:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-7:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-8:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-8:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-9:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-9:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
 				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
+				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-10:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
 				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
+				</guidance>
 			</pv>
 			<pv name="TD-D11:Ctrl-EVM-10:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 		</component>
 		<component name="TD-D21">
 			<pv name="TD-D21:Ctrl-EVM-1:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D21:Ctrl-EVM-1:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D21:Ctrl-EVM-2:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D21:Ctrl-EVM-2:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
 				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
+				</guidance>
 			</pv>
 			<pv name="TD-D21:Ctrl-EVM-3:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
 				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
+				</guidance>
 			</pv>
 			<pv name="TD-D21:Ctrl-EVM-3:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 		</component>
 		<component name="TD-D22">
 			<pv name="TD-D22:Ctrl-EVM-1:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D22:Ctrl-EVM-1:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D22:Ctrl-EVM-2:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D22:Ctrl-EVM-2:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
 				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
+				</guidance>
 			</pv>
 			<pv name="TD-D22:Ctrl-EVM-3:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
 				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
+				</guidance>
 			</pv>
 			<pv name="TD-D22:Ctrl-EVM-3:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 		</component>
 		<component name="TD-D23">
 			<pv name="TD-D23:Ctrl-EVM-1:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D23:Ctrl-EVM-1:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D23:Ctrl-EVM-2:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 			<pv name="TD-D23:Ctrl-EVM-2:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
 				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
+				</guidance>
 			</pv>
 			<pv name="TD-D23:Ctrl-EVM-3:EvtClk-Pll-Sts">
-				<description>EvtClk-Pll-Sts ALARM</description>
+				<description>PLL does not synchronize to RF</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>EvtClk-Pll-Sts</details>
 				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
+				</guidance>
 			</pv>
 			<pv name="TD-D23:Ctrl-EVM-3:Enable-Sel">
-				<description>Enable-Sel ALARM</description>
+				<description>Enable-Sel WARNING</description>
 				<latching>false</latching>
 				<guidance>
 					<title>[Code]</title>
 					<details>Enable-Sel</details>
+				</guidance>
+				<guidance>
+					<title>[Operator verification]</title>
+					<detail>Set Enable-Sel to 1</detail>
+				</guidance>
+				<guidance>
+					<title>[Recovery]</title>
+					<detail>Automatic</detail>
 				</guidance>
 			</pv>
 		</component>

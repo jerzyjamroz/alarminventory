@@ -13,15 +13,23 @@ SEC10:
     details: SEC10
 
 EvtClk-Pll-Sts:
-  description: "EvtClk-Pll-Sts ALARM"
+  description: "PLL does not synchronize to RF"
   latching: false
   guidance:
-    title: "[Code]"
-    details: EvtClk-Pll-Sts
+    - title: "[Code]"
+      details: "EvtClk-Pll-Sts"
+    - title: "[Operator verification]"
+      detail: "https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators"
+    - title: "[Recovery]"
+      detail: "Automatic"
 
 Enable-Sel:
-  description: "Enable-Sel ALARM"
+  description: "Enable-Sel WARNING"
   latching: false
   guidance:
-    title: "[Code]"
-    details: Enable-Sel
+    - title: "[Code]"
+      details: Enable-Sel
+    - title: "[Operator verification]"
+      detail: "Set Enable-Sel to 1"
+    - title: "[Recovery]"
+      detail: "Automatic"
