@@ -12,16 +12,16 @@ from genericlibs import *
 
 def _load_inv(suffix="_pvd."):
     _yaml = {}
-    for fi in _ls:
+    for fi in LS:
         if suffix in fi:
-            with open(_inv_dir + '/' + fi) as infile:
+            with open(INV_DIR + '/' + fi) as infile:
                 ids_tmp = oyaml.load(infile, Loader=oyaml.FullLoader)
                 _yaml = {**_yaml, **ids_tmp}
     return _yaml
 
 
 def _check_dev(prefix, pvarg):
-    _yaml = _dev_yaml
+    _yaml = DEV_YAML
     for devi in _yaml:
         if devi in prefix:
             if pvarg in _yaml[devi]:
@@ -31,7 +31,7 @@ def _check_dev(prefix, pvarg):
 
 def _add_pvd(prefix=""):
     _list = []
-    _yaml = _pvd_yaml
+    _yaml = PVD_YAML
     for pvdi in _yaml:
         if _check_dev(prefix, pvdi):
             _yaml[pvdi].update({"@name": pfx_put_sep(prefix) + pvdi})
@@ -41,48 +41,64 @@ def _add_pvd(prefix=""):
     return _list
 
 
-def _add_inv(out_list):
+def _make_as(as_str):
+    _list = []
     _tmp_list = []
-    for asi in _inv_yaml:
-        for dsi in _inv_yaml[asi]:
-            _tmp_list = _add_pvd(pfx_put_sep(asi)+dsi)
-            force_append_list(out_list, _tmp_list)
-            _tmp_list.clear()
+    for dsi in INV_YAML[as_str]:
+        _tmp_list = _add_pvd(pfx_put_sep(as_str)+dsi)
+        force_append_list(_list, _tmp_list)
+        _tmp_list.clear()
+    return _list
+
+
+def _make_component_as_pv(as_str, as_list):
+    _dict = {"component": {"@name": as_str, "pv": as_list}}
+    return _dict
+
+
+def _add_root(component_as):
+    _tree = INV_FILE.split("-")
+    _root_dict = component_as.copy()
+    for node in reversed(_tree):
+        _root_dict = {'component': {"@name": node, "component": _root_dict["component"]} }
+
+    _root_dict["config"] = _root_dict.pop("component")
+    return _root_dict
 
 
 def main(in_yl, out_xl):
+    # INIT
     logging.info(__file__)
-    global _inv_dir, _ls
-    global _inv_yaml, _pvd_yaml, _dev_yaml, _out_list
-    _inv_dir = os.path.dirname(in_yl)
-    _ls = os.listdir(_inv_dir)
+    global INV_DIR, LS, INV_FILE
+    global INV_YAML, PVD_YAML, DEV_YAML
+    INV_DIR = os.path.dirname(in_yl)
+    INV_FILE = os.path.basename(in_yl).replace(".yaml", "")
+    LS = os.listdir(INV_DIR)
+    PVD_YAML = _load_inv("_pvd.")
+    DEV_YAML = _load_inv("_dev.")
 
     with open(in_yl) as infile:
-        _inv_yaml = oyaml.load(infile, Loader=oyaml.FullLoader)
+        INV_YAML = oyaml.load(infile, Loader=oyaml.FullLoader)
 
-    _pvd_yaml = _load_inv("_pvd.")
-    _dev_yaml = _load_inv("_dev.")
+    logging.info(INV_DIR)
+    logging.info(LS)
+    logging.info(INV_FILE)
+    logging.info(INV_YAML)
+    logging.info(PVD_YAML)
+    logging.info(DEV_YAML)
 
-    _out_list = []
-    _add_inv(_out_list)
+    # BODY
+    _component_dict = {}
+    for asi in INV_YAML:
+        _as_tmp_list = _make_as(asi)
+        _component_as_dict = _make_component_as_pv(asi, _as_tmp_list)
 
-    print(_out_list)
+    _out_dict = _add_root(_component_as_dict)
 
-    # _l2_dict = {"pv": []}
-    # for dicti in _out_list:
-    #     _l2_dict["pv"].append(dicti)
-    #
-    # # Add the prefix name to the structure
-    # for pfxi in _inv_yaml:
-    #     if pfxi in _l2_dict["pv"][0]['@name']:
-    #         _l2_dict.update({"@name": pfxi})
+    with open(out_xl, 'w') as outfile:
+        outfile.write(xmltodict.unparse(_out_dict, encoding='utf-8', pretty=True))
 
-    # print(_l2_dict)
-
-    #with open(out_xl, 'w') as outfile:
-    #    outfile.write(xmltodict.unparse(_yaml, encoding='utf-8', pretty=True))
-
-    #logging.info(_yaml)
+    logging.info(_out_dict)
 
 
 def demo1_xml2xml():

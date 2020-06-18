@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component name="TD-M">
-	<pv name="CLOCK:SEC1">
-		<description>SEC1 ALARM</description>
-		<latching>false</latching>
-		<guidance>
-			<title>[Code]</title>
-			<details>SEC1</details>
-		</guidance>
-	</pv>
-</component>
+<config name="MAIN">
+	<component name="TEST">
+		<component name="TD-L3U1">
+			<pv name="TD-L3U1:Ctrl-EVM-1:EvtClk-Pll-Sts">
+				<description>EvtClk-Pll-Sts ALARM</description>
+				<latching>false</latching>
+				<guidance>
+					<title>[Code]</title>
+					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+			</pv>
+			<pv name="TD-L3U1:Ctrl-EVM-1:Enable-Sel">
+				<description>Enable-Sel ALARM</description>
+				<latching>false</latching>
+				<guidance>
+					<title>[Code]</title>
+					<details>Enable-Sel</details>
+				</guidance>
+			</pv>
+			<pv name="TD-L3U1:Ctrl-EVM-2:EvtClk-Pll-Sts">
+				<description>EvtClk-Pll-Sts ALARM</description>
+				<latching>false</latching>
+				<guidance>
+					<title>[Code]</title>
+					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+			</pv>
+			<pv name="TD-L3U1:Ctrl-EVM-2:Enable-Sel">
+				<description>Enable-Sel ALARM</description>
+				<latching>false</latching>
+				<guidance>
+					<title>[Code]</title>
+					<details>Enable-Sel</details>
+				</guidance>
+			</pv>
+		</component>
+	</component>
+</config>

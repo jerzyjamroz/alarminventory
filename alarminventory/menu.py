@@ -8,7 +8,7 @@ import argparse
 def menu():
     parser = argparse.ArgumentParser()
     parser.add_argument("-v", "--verbosity", action="count", default=0)
-    parser.add_argument("-i", "--inventory", action='store', default="inventory/example.yaml", help="Read the PV inventory")
+    parser.add_argument("-i", "--inventory", action='store', default="inventory/MAIN-TEST.yaml", help="Read the PV inventory")
     parser.add_argument("-o", "--output", action='store', default="output/example.xml", help="Output the alarms for the EPICS BEAST alarm system")
     parser.add_argument("-m", "--manual", action='store_true', help="Print the application manual")
     args = parser.parse_args()
