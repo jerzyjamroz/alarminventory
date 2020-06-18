@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config name="MAIN">
+	<component name="TEST">
+		<component name="TD-L3U1">
+			<pv name="TD-L3U1:Ctrl-EVG-1:EvtClk-Pll-Sts">
+				<description>EvtClk-Pll-Sts ALARM</description>
+				<latching>false</latching>
+				<guidance>
+					<title>[Code]</title>
+					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+			</pv>
+			<pv name="TD-L3U1:Ctrl-EVG-1:Enable-Sel">
+				<description>Enable-Sel ALARM</description>
+				<latching>false</latching>
+				<guidance>
+					<title>[Code]</title>
+					<details>Enable-Sel</details>
+				</guidance>
+			</pv>
+			<pv name="TD-L3U1:Ctrl-EVM-1:EvtClk-Pll-Sts">
+				<description>EvtClk-Pll-Sts ALARM</description>
+				<latching>false</latching>
+				<guidance>
+					<title>[Code]</title>
+					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+			</pv>
+			<pv name="TD-L3U1:Ctrl-EVM-1:Enable-Sel">
+				<description>Enable-Sel ALARM</description>
+				<latching>false</latching>
+				<guidance>
+					<title>[Code]</title>
+					<details>Enable-Sel</details>
+				</guidance>
+			</pv>
+			<pv name="TD-L3U1:Ctrl-EVM-2:EvtClk-Pll-Sts">
+				<description>EvtClk-Pll-Sts ALARM</description>
+				<latching>false</latching>
+				<guidance>
+					<title>[Code]</title>
+					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+			</pv>
+			<pv name="TD-L3U1:Ctrl-EVM-2:Enable-Sel">
+				<description>Enable-Sel ALARM</description>
+				<latching>false</latching>
+				<guidance>
+					<title>[Code]</title>
+					<details>Enable-Sel</details>
+				</guidance>
+			</pv>
+			<pv name="TD-L3U1:Ctrl-EVM-3:EvtClk-Pll-Sts">
+				<description>EvtClk-Pll-Sts ALARM</description>
+				<latching>false</latching>
+				<guidance>
+					<title>[Code]</title>
+					<details>EvtClk-Pll-Sts</details>
+				</guidance>
+			</pv>
+			<pv name="TD-L3U1:Ctrl-EVM-3:Enable-Sel">
+				<description>Enable-Sel ALARM</description>
+				<latching>false</latching>
+				<guidance>
+					<title>[Code]</title>
+					<details>Enable-Sel</details>
+				</guidance>
+			</pv>
+		</component>
+	</component>
+</config>

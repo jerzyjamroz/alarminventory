@@ -4,4 +4,8 @@ CLOCK:
 EVM:
   - "EvtClk-Pll-Sts"
   - "Enable-Sel"
+EVG:
+  - "EvtClk-Pll-Sts"
+  - "Enable-Sel"
+
 
