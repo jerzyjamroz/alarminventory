@@ -4,8 +4,6 @@
 import os
 import logging
 import oyaml
-# import yamlordereddictloader
-# import dicttoxml
 import xmltodict
 from genericlibs import *
 
@@ -41,7 +39,7 @@ def _add_pvd(prefix=""):
     return _list
 
 
-def _make_as(as_str):
+def _make_as_sys(as_str):
     _list = []
     _tmp_list = []
     for dsi in INV_YAML[as_str]:
@@ -88,9 +86,8 @@ def main(in_yl, out_xl):
     logging.info(DEV_YAML)
 
     # BODY
-    _component_dict = {}
     for asi in INV_YAML:
-        _as_tmp_list = _make_as(asi)
+        _as_tmp_list = _make_as_sys(asi)
         _component_as_dict = _make_component_as_pv(asi, _as_tmp_list)
 
     _out_dict = _add_root(_component_as_dict)
