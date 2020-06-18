@@ -12,7 +12,7 @@ import yaml2xml
 
 
 def main():
-    logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
+    logging.basicConfig(datefmt="%Y-%m-%dT%H:%M:%S", format='%(asctime)s+%(msecs)03d %(name)s %(levelname)s: %(message)s', level=logging.INFO)
     # Assure py3
     assure_py3()
 

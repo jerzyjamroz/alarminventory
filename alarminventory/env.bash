@@ -6,6 +6,6 @@
 # REQUIREMENTS
   # The conda virtual environment of python3 which is named venv-py3
 
-conda activate venv-py3
+conda activate py38
 export PYTHONPATH=$PWD:$PYTHONPATH
 

@@ -66,7 +66,7 @@ def _add_root(component_as):
 
 def main(in_yl, out_xl):
     # INIT
-    logging.info(__file__)
+    logging.info(f"{__file__=}")
     global INV_DIR, LS, INV_FILE
     global INV_YAML, PVD_YAML, DEV_YAML
     INV_DIR = os.path.dirname(in_yl)
@@ -78,24 +78,29 @@ def main(in_yl, out_xl):
     with open(in_yl) as infile:
         INV_YAML = oyaml.load(infile, Loader=oyaml.FullLoader)
 
-    logging.info(INV_DIR)
-    logging.info(LS)
-    logging.info(INV_FILE)
-    logging.info(INV_YAML)
-    logging.info(PVD_YAML)
-    logging.info(DEV_YAML)
+    logging.info(f"{INV_DIR=}")
+    logging.info(f"{LS=}")
+    logging.info(f"{INV_FILE=}")
+    logging.info(f"{INV_YAML=}")
+    logging.info(f"{PVD_YAML=}")
+    logging.info(f"{DEV_YAML=}")
 
     # BODY
+    _body_dict_tmp = {}
     for asi in INV_YAML:
         _as_tmp_list = _make_as_sys(asi)
-        _component_as_dict = _make_component_as_pv(asi, _as_tmp_list)
+        print(_as_tmp_list)
+    #    #_component_as_dict = _make_component_as_pv(asi, _as_tmp_list)
 
-    _out_dict = _add_root(_component_as_dict)
 
-    with open(out_xl, 'w') as outfile:
-        outfile.write(xmltodict.unparse(_out_dict, encoding='utf-8', pretty=True))
-
-    logging.info(_out_dict)
+    #print(_body_dict_tmp)
+    #_component_as_dict = _make_component_as_pv(asi, _body_dict_tmp)
+    #_out_dict = _add_root(_component_as_dict)
+    #
+    #with open(out_xl, 'w') as outfile:
+    #    outfile.write(xmltodict.unparse(_out_dict, encoding='utf-8', pretty=True))
+    #
+    #logging.info(_out_dict)
 
 
 def demo1_xml2xml():

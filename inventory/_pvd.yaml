@@ -4,18 +4,21 @@ SEC1:
   guidance:
     title: "[Code]"
     details: SEC1
+
 SEC10:
   description: "SEC10 ALARM"
   latching: false
   guidance:
     title: "[Code]"
     details: SEC10
+
 EvtClk-Pll-Sts:
   description: "EvtClk-Pll-Sts ALARM"
   latching: false
   guidance:
     title: "[Code]"
     details: EvtClk-Pll-Sts
+
 Enable-Sel:
   description: "Enable-Sel ALARM"
   latching: false
