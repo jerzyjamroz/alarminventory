@@ -49,16 +49,22 @@ def _make_as_sys(as_str):
     return _list
 
 
-def _make_component_as_pv(as_str, as_list):
-    _dict = {"component": {"@name": as_str, "pv": as_list}}
+def _make_component(sys_list):
+    _dict = {"component": sys_list}
     return _dict
 
 
-def _add_root(component_as):
+def _add_as_pv(as_str, as_list):
+    _dict = {"@name": as_str, "pv": as_list}
+    return _dict
+
+
+def _add_root(body):
     _tree = INV_FILE.split("-")
-    _root_dict = component_as.copy()
+    _root_dict = body.copy()
     for node in reversed(_tree):
         _root_dict = {'component': {"@name": node, "component": _root_dict["component"]} }
+        #_root_dict = {'component': {"@name": node, _root_dict.copy()}}
 
     _root_dict["config"] = _root_dict.pop("component")
     return _root_dict
@@ -86,21 +92,19 @@ def main(in_yl, out_xl):
     logging.info(f"{DEV_YAML=}")
 
     # BODY
-    _body_dict_tmp = {}
+    _sys_list_tmp = []
     for asi in INV_YAML:
-        _as_tmp_list = _make_as_sys(asi)
-        print(_as_tmp_list)
-    #    #_component_as_dict = _make_component_as_pv(asi, _as_tmp_list)
+        _onesys_list_tmp = _make_as_sys(asi)
+        _onesys_header_list_tmp = [_add_as_pv(asi, _onesys_list_tmp)]
+        _sys_list_tmp = _sys_list_tmp + _onesys_header_list_tmp
 
+    _comp_sys_dict = _make_component(_sys_list_tmp)
+    _out_dict = _add_root(_comp_sys_dict)
 
-    #print(_body_dict_tmp)
-    #_component_as_dict = _make_component_as_pv(asi, _body_dict_tmp)
-    #_out_dict = _add_root(_component_as_dict)
-    #
-    #with open(out_xl, 'w') as outfile:
-    #    outfile.write(xmltodict.unparse(_out_dict, encoding='utf-8', pretty=True))
-    #
-    #logging.info(_out_dict)
+    with open(out_xl, 'w') as outfile:
+        outfile.write(xmltodict.unparse(_out_dict, encoding='utf-8', pretty=True))
+
+    logging.info(_out_dict)
 
 
 def demo1_xml2xml():
