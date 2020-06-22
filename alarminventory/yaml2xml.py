@@ -28,15 +28,16 @@ def _check_dev(prefix, pvarg):
 
 
 def _add_pvd(prefix=""):
-    _list = []
-    _yaml = PVD_YAML
-    for pvdi in _yaml:
-        if _check_dev(prefix, pvdi):
-            _yaml[pvdi].update({"@name": pfx_put_sep(prefix) + pvdi})
-            _list.append(_yaml[pvdi])
+    __list = []
+    __pvd_yaml = PVD_YAML
+    for devi in __pvd_yaml:
+        if devi in prefix:
+            for pvdi in __pvd_yaml[devi]:
+                if _check_dev(prefix, pvdi):
+                    __pvd_yaml[devi][pvdi].update({"@name": pfx_put_sep(prefix) + pvdi})
+                    __list.append(__pvd_yaml[devi][pvdi])
 
-    # print(_list)
-    return _list
+    return __list
 
 
 def _make_as_sys(as_str):

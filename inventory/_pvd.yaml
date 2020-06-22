@@ -1,35 +1,60 @@
-SEC1:
-  description: "SEC1 ALARM"
-  latching: false
-  guidance:
-    title: "[Code]"
-    details: SEC1
+CLOCK:
+  SEC1:
+    description: "SEC1 ALARM"
+    latching: false
+    guidance:
+      title: "[Code]"
+      details: SEC1
 
-SEC10:
-  description: "SEC10 ALARM"
-  latching: false
-  guidance:
-    title: "[Code]"
-    details: SEC10
+  SEC10:
+    description: "SEC10 ALARM"
+    latching: false
+    guidance:
+      title: "[Code]"
+      details: SEC10
 
-EvtClk-Pll-Sts:
-  description: "PLL does not synchronize to RF"
-  latching: false
-  guidance:
-    - title: "[Code]"
-      details: "EvtClk-Pll-Sts"
-    - title: "[Operator verification]"
-      detail: "https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators"
-    - title: "[Recovery]"
-      detail: "Automatic"
+EVM:
+  EvtClk-Pll-Sts:
+    description: "PLL does not synchronize to RF"
+    latching: false
+    guidance:
+      - title: "[Code]"
+        details: "EvtClk-Pll-Sts"
+      - title: "[Operator verification]"
+        detail: "https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators"
+      - title: "[Recovery]"
+        detail: "Automatic"
 
-Enable-Sel:
-  description: "Enable-Sel WARNING"
-  latching: false
-  guidance:
-    - title: "[Code]"
-      details: Enable-Sel
-    - title: "[Operator verification]"
-      detail: "Set Enable-Sel to 1"
-    - title: "[Recovery]"
-      detail: "Automatic"
+  Enable-Sel:
+    description: "The device is switched off"
+    latching: false
+    guidance:
+      - title: "[Code]"
+        details: Enable-Sel
+      - title: "[Operator verification]"
+        detail: "Set Enable-Sel to 1"
+      - title: "[Recovery]"
+        detail: "Automatic"
+
+EVG:
+  EvtClk-Pll-Sts:
+    description: "PLL does not synchronize to RF"
+    latching: false
+    guidance:
+      - title: "[Code]"
+        details: "EvtClk-Pll-Sts"
+      - title: "[Operator verification]"
+        detail: "https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators"
+      - title: "[Recovery]"
+        detail: "Automatic"
+
+  Enable-Sel:
+    description: "The device is switched off"
+    latching: false
+    guidance:
+      - title: "[Code]"
+        details: Enable-Sel
+      - title: "[Operator verification]"
+        detail: "Set Enable-Sel to 1"
+      - title: "[Recovery]"
+        detail: "Automatic"
