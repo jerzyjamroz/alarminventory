@@ -65,6 +65,70 @@
 				<detail>Automatic</detail>
 			</guidance>
 		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-1:SFP1-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-1:SFP2-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-1:SFP3-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-1:SFP4-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-1:SFP5-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-1:SFP6-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-1:SFP7-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-1:SFP8-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
 		<pv name="TD-L3U1:Ctrl-EVM-2:EvtClk-Pll-Sts">
 			<description>PLL does not synchronize to RF</description>
 			<latching>false</latching>
@@ -95,6 +159,70 @@
 			<guidance>
 				<title>[Recovery]</title>
 				<detail>Automatic</detail>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-2:SFP1-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-2:SFP2-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-2:SFP3-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-2:SFP4-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-2:SFP5-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-2:SFP6-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-2:SFP7-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVM-2:SFP8-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
 			</guidance>
 		</pv>
 	</component>
@@ -163,6 +291,70 @@
 				<detail>Automatic</detail>
 			</guidance>
 		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-1:SFP1-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-1:SFP2-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-1:SFP3-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-1:SFP4-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-1:SFP5-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-1:SFP6-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-1:SFP7-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-1:SFP8-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
 		<pv name="TD-L3U2:Ctrl-EVM-2:EvtClk-Pll-Sts">
 			<description>PLL does not synchronize to RF</description>
 			<latching>false</latching>
@@ -195,6 +387,70 @@
 				<detail>Automatic</detail>
 			</guidance>
 		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-2:SFP1-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-2:SFP2-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-2:SFP3-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-2:SFP4-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-2:SFP5-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-2:SFP6-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-2:SFP7-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-2:SFP8-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
 		<pv name="TD-L3U2:Ctrl-EVM-3:EvtClk-Pll-Sts">
 			<description>PLL does not synchronize to RF</description>
 			<latching>false</latching>
@@ -225,6 +481,70 @@
 			<guidance>
 				<title>[Recovery]</title>
 				<detail>Automatic</detail>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-3:SFP1-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-3:SFP2-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-3:SFP3-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-3:SFP4-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-3:SFP5-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-3:SFP6-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-3:SFP7-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVM-3:SFP8-T-I">
+			<description>The device</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>SFP-T-I</details>
 			</guidance>
 		</pv>
 	</component>

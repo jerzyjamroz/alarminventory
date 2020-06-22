@@ -19,21 +19,24 @@ def _load_inv(suffix="_pvd."):
 
 
 def _check_dev(prefix, pvarg):
-    _yaml = DEV_YAML
-    for devi in _yaml:
+    __pvd_yaml = PVD_YAML
+    for devi in __pvd_yaml:
         if devi in prefix:
-            if pvarg in _yaml[devi]:
-                return True
+            for pvi in __pvd_yaml[devi]:
+                if remove_digits(pvarg) in pvi:
+                    return True
     return False
 
 
 def _add_pvd(prefix=""):
     __list = []
-    __pvd_yaml = PVD_YAML
-    for devi in __pvd_yaml:
+    __dev_yaml = DEV_YAML
+    for devi in __dev_yaml:
         if devi in prefix:
-            for pvdi in __pvd_yaml[devi]:
+            for pvdi in __dev_yaml[devi]:
                 if _check_dev(prefix, pvdi):
+                    __pvd_yaml = PVD_YAML
+                    __pvd_yaml[devi][pvdi] = __pvd_yaml[devi][remove_digits(pvdi)].copy()
                     __pvd_yaml[devi][pvdi].update({"@name": pfx_put_sep(prefix) + pvdi})
                     __list.append(__pvd_yaml[devi][pvdi])
 

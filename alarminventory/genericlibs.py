@@ -7,6 +7,13 @@ import os
 #import socket
 #import math
 #import epics
+from string import digits
+
+
+def remove_digits(text=""):
+    rm_dig = str.maketrans('', '', digits)
+    res = text.translate(rm_dig)
+    return res
 
 
 def assure_py3():

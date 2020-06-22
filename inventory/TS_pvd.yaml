@@ -11,6 +11,13 @@ EVM:
       - title: "[Recovery]"
         detail: "Automatic"
 
+  SFP-T-I:
+    description: "The temperature is outside the operation range."
+    latching: false
+    guidance:
+      - title: "[Code]"
+        details: SFP-T-I
+
   Enable-Sel:
     description: "The device is switched off"
     latching: false
