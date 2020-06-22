@@ -2,22 +2,4 @@ CLOCK:
   - "SEC1"
   - "SEC10"
 
-EVM:
-  - "EvtClk-Pll-Sts"
-  - "Enable-Sel"
-  - "SFP1-T-I"
-  - "SFP2-T-I"
-  - "SFP3-T-I"
-  - "SFP4-T-I"
-  - "SFP5-T-I"
-  - "SFP6-T-I"
-  - "SFP7-T-I"
-  - "SFP8-T-I"
-
-EVG:
-  - "EvtClk-Pll-Sts"
-  - "Enable-Sel"
-
-SCE:
-  - "Period"
 

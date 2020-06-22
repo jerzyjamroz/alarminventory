@@ -1,0 +1,58 @@
+
+EVM:
+  EvtClk-Pll-Sts:
+    description: "PLL does not synchronize to RF"
+    latching: false
+    guidance:
+      - title: "[Code]"
+        details: "EvtClk-Pll-Sts"
+      - title: "[Operator verification]"
+        detail: "https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators"
+      - title: "[Recovery]"
+        detail: "Automatic"
+
+  Enable-Sel:
+    description: "The device is switched off"
+    latching: false
+    guidance:
+      - title: "[Code]"
+        details: Enable-Sel
+      - title: "[Operator verification]"
+        detail: "Set Enable-Sel to 1"
+      - title: "[Recovery]"
+        detail: "Automatic"
+
+EVG:
+  EvtClk-Pll-Sts:
+    description: "PLL does not synchronize to RF"
+    latching: false
+    guidance:
+      - title: "[Code]"
+        details: "EvtClk-Pll-Sts"
+      - title: "[Operator verification]"
+        detail: "https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators"
+      - title: "[Recovery]"
+        detail: "Automatic"
+
+  Enable-Sel:
+    description: "The device is switched off"
+    latching: false
+    guidance:
+      - title: "[Code]"
+        details: Enable-Sel
+      - title: "[Operator verification]"
+        detail: "Set Enable-Sel to 1"
+      - title: "[Recovery]"
+        detail: "Automatic"
+
+SCE:
+  Period:
+    description: "Linac Cycle Period is not correct"
+    latching: false
+    guidance:
+      - title: "[Code]"
+        details: "Period"
+      - title: "[Operator verification]"
+        detail: "https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators"
+      - title: "[Recovery]"
+        detail: "Automatic"

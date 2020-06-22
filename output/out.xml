@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config name="MAIN">
 	<component name="TD-L3U1">
+		<pv name="TD-L3U1:Ctrl-EVG-1:EvtClk-Pll-Sts">
+			<description>PLL does not synchronize to RF</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>EvtClk-Pll-Sts</details>
+			</guidance>
+			<guidance>
+				<title>[Operator verification]</title>
+				<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+			</guidance>
+			<guidance>
+				<title>[Recovery]</title>
+				<detail>Automatic</detail>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U1:Ctrl-EVG-1:Enable-Sel">
+			<description>The device is switched off</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>Enable-Sel</details>
+			</guidance>
+			<guidance>
+				<title>[Operator verification]</title>
+				<detail>Set Enable-Sel to 1</detail>
+			</guidance>
+			<guidance>
+				<title>[Recovery]</title>
+				<detail>Automatic</detail>
+			</guidance>
+		</pv>
 		<pv name="TD-L3U1:Ctrl-EVM-1:EvtClk-Pll-Sts">
 			<description>PLL does not synchronize to RF</description>
 			<latching>false</latching>
@@ -67,6 +99,38 @@
 		</pv>
 	</component>
 	<component name="TD-L3U2">
+		<pv name="TD-L3U2:Ctrl-EVG-1:EvtClk-Pll-Sts">
+			<description>PLL does not synchronize to RF</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>EvtClk-Pll-Sts</details>
+			</guidance>
+			<guidance>
+				<title>[Operator verification]</title>
+				<detail>https://confluence.esss.lu.se/display/HAR/Timing+Verification+for+Operators</detail>
+			</guidance>
+			<guidance>
+				<title>[Recovery]</title>
+				<detail>Automatic</detail>
+			</guidance>
+		</pv>
+		<pv name="TD-L3U2:Ctrl-EVG-1:Enable-Sel">
+			<description>The device is switched off</description>
+			<latching>false</latching>
+			<guidance>
+				<title>[Code]</title>
+				<details>Enable-Sel</details>
+			</guidance>
+			<guidance>
+				<title>[Operator verification]</title>
+				<detail>Set Enable-Sel to 1</detail>
+			</guidance>
+			<guidance>
+				<title>[Recovery]</title>
+				<detail>Automatic</detail>
+			</guidance>
+		</pv>
 		<pv name="TD-L3U2:Ctrl-EVM-1:EvtClk-Pll-Sts">
 			<description>PLL does not synchronize to RF</description>
 			<latching>false</latching>
